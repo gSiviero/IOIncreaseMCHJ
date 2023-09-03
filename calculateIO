@@ -1,0 +1,13 @@
+import random
+memory = 900;
+updates = 117
+arr = [];
+
+for x in range(updates * 10):
+    if(x % 5 != 0):
+      arr.append(random.random()/5 + 0.9)
+    else :
+      arr.append(random.random())
+
+a = np.array(arr)
+print(np.var(a) * updates * memory)
